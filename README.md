@@ -35,3 +35,5 @@ d = {1:2,(2,):3,'3':4,[4]:5}
 print(d)
 
 difference between tuples and list
+
+custom user and abstract user?
