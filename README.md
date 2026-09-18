@@ -96,6 +96,7 @@ difference between abstract user and abstract base user?
    Abstract base user:
    If the project has custom authentication requirements, such as using email or phone as the primary login identifier with significantly different user behavior, I would consider AbstractBaseUser because it provides complete flexibility at the cost of additional implementation effort.
 
+some more questions:
 static vs classmethod
 managers in django
 objects
@@ -103,6 +104,15 @@ Destroy method why do we use queryset = Node.objects.all() we should not use thi
 migrations vs migrate
 how django knows order of migration files
 what will be first initialized in django
+db calls for select related and prefetch related
+adminstartive commands
+
+In the serializers why do we use read_only and write only
+why allowed hosts in django
+
+we are using this 2 fields in all the models is there any way we can reuse this, i dont want to write in everymodel
+    created_at = models.DateTimeField(auto_now=True)
+    modified_at = models.DateTimeField(auto_now=True)
 
 
 mutable vs immutable
