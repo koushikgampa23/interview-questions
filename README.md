@@ -96,3 +96,86 @@ difference between abstract user and abstract base user?
    Abstract base user:
    If the project has custom authentication requirements, such as using email or phone as the primary login identifier with significantly different user behavior, I would consider AbstractBaseUser because it provides complete flexibility at the cost of additional implementation effort.
 
+static vs classmethod
+managers in django
+objects
+Destroy method why do we use queryset = Node.objects.all() we should not use this
+migrations vs migrate
+how django knows order of migration files
+what will be first initialized in django
+
+
+mutable vs immutable
+is vs ==
+dunder method
+generator methods
+
+django flow
+why do we use middlewares in django
+
+scenario where you have handled database optimization
+
+a = Node.objects.filter(name__in=["a", "b"])
+
+b = Node.objects.filter(name__in=["a", "b"])
+
+print(b)
+
+how many db calls
+
+code1:
+class ListCopy(list):
+    def __init__(self, *args, **kwargs):
+        self.values = args
+        
+    def __len__(self):
+        return 1;
+
+l = ListCopy([1, 2, 3, 4])
+l.append(5)
+print(len(l))
+
+code2:
+l1 = [1, 2, 3]
+l2 = list(l1)
+print(l2 is l1) # False
+print(l2 == l1) # True
+
+code3:
+t1 = (1, 2, 3)
+t2 = tuple(t1)
+t3 = tuple(t1)
+print(t3 is t2) # False
+print(t3 == t2) # True
+
+code4:
+s1 = 'ABC'
+s2 = 'ABC'
+print(s1 is s2) # True
+
+def extendList(val, list=[]):
+    list.append(val)
+    return list
+
+code5:
+list1 = extendList(10) # [10]
+list2 = extendList(123,[]) #[123]
+list3 = extendList('a') #["a"]
+
+print("list1 = %s" % list1)
+print("list2 = %s" % list2)
+print("list3 = %s" % list3)
+
+code6:
+a = [1,2]
+b = set()
+c = {}
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+c[a] = a
+print(c) # Error, keys mutable
+
+
