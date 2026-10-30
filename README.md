@@ -323,9 +323,35 @@ print(c) # Error, keys mutable
        longestSubstr=temp
        
    print(longestSubstr)
+
+# HR questions
+   why do you want to join our company?
+   	I always look for challenging environment where i can upgrade myself. 
+   	By going through the set of rounds of interview process which made me understand the expertise of technical team and made me self realize my weak positions.  
+   During this less span of time, i got an opportunity to learn and improve myself. I believe that i can leverage myself in a heavy curve which will help the orgniazation in tern, 
+   		
+   why did you leave the current organization?
+   	I always look for a learning environment and keep upgrading. And the product that we are working have reached an end for launch. As a part of my career upgrade i wanted to take a change and i belive your organization is best fit for me. 
+   	Current company is mechanical based comapany and it is experimental team. No guidence and no growth in the current organization. 
+   
+   where do you want to see yourself after 2 years down the line?
+   	I always keen to be the better than yesterday. 2 years down the line if i would get a chance to drive a product that which will enable the company growth that will be my proud acheievement.
+   	
+   short term and long term?
+   	Currently if i am getting hired as a developer as an organization i will try my best to get the place where i can help a team to enable the product. My long term goal would be architect who can handle entire teams and product. 
+   	short term would be the best position available at that point of time in the organization, (A role equivlent to Senior lead)
+   	
+   Why us?
+   	on going through your company profile across multiple platforms, I see the 2 things in a company
+   	1. The work culture -> from the linkedin reviews and other platforms i feel the work culture matches my vibe. 
+   	2. The Technology -> As far as i see organization is working on the AI driven applications. I hope i get the same opportunity and which will help me to self upgrade as well as comapany growth. 
+   	
+   how do you grow with this company?
+   	I take a self responsibility towards finishing the items. I always look for bringing best out of given task by self improvement and curious about the most optimized approaches. 
+   	I believe the continuous upgrade with optimization help me to grow the company as well as grow with the company. 
+      
+      
+      print("TIME ----",start - end)
    
    
-   print("TIME ----",start - end)
-
-
-
+   
