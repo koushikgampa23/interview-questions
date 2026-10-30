@@ -188,4 +188,74 @@ print(type(c))
 c[a] = a
 print(c) # Error, keys mutable
 
+# Django questions
+   Django Interview Questions
+
+   prefetch_related and select_related
+   memory management in django
+   generics vs modelviewset
+   Does middleware does preoperation and postoperation as well?
+   what is middleware?
+   You have one organization table and device table, device table is the foreign key of the organization table. based on device find all the organizations
+   Organization.objects.all().filter(device__id="12")
+   have you done admin page customization
+   can we decode the password of the user table is it possible?
+   
+   select_related("desgin").values().first()
+   .values().first()
+    
+   both of them gives same value the only difference is the optimization, it uses inner join, reduces queries hits
+    
+   DesignMaster.objects.select_related("project").filter(project__id="062383a7-c753-4d39-8d17-7ffee185d10f").values().first()
+   DesignMaster.objects.filter(project__id="062383a7-c753-4d39-8d17-7ffee185d10f").values().first()
+    
+   Q) You have project id get design id and project content
+   design = DesignMaster.objects.get(id="cc737589-18f4-4587-9d4a-d6ceaa2d76db")
+   design.project.project_number
+    
+   Q) Many to many relation I have design id that is associated with multiple roof ids 
+   design = DesignMaster.objects.get(id="cc737589-18f4-4587-9d4a-d6ceaa2d76db") 
+   design.roof_details.all()
+    
+   Q) Queries
+   Project.objects.filter(Q(project_number="D-0020") | Q(project_number="D-0021") & Q(is_deleted=True)).values()
+   Project.objects.filter(Q(project_number="D-0020") | (Q(project_number="D-0021") & Q(is_deleted=True))).values() 
+   Project.objects.filter((Q(project_number="D-0020") | Q(project_number="D-0021")) & Q(is_deleted=True)).values()
+   
+   difference between abstract user and base user
+   	abstract user = extends User modal, Ideal for to add functionality without losing existing features, builtin functions, built in fields
+   	AbstractBaseUser = completly customizable, gives only basic authentication
+   
+   postion : relative, absolute
+   postion: fixed, static, sticky
+   html : box properties, inline, block
+   
+   different class in python
+   abstract, static, instance
+   generators
+   
+   session storage and localstorage
+   cookies 
+   
+   serverside and client side rendering
+   
+   Generator 
+   from datetime import datetime
+   
+   def seq(n):
+       
+       for i in range(n):
+           yield i
+           
+   a = seq(10000000000)
+   #print(a)
+   start = datetime.now()
+   for i in a:
+       print(i)
+   end = datetime.now()
+   
+   
+   print("TIME ----",start - end)
+
+
 
