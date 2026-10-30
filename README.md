@@ -253,6 +253,76 @@ print(c) # Error, keys mutable
    for i in a:
        print(i)
    end = datetime.now()
+
+# Python coding snipets
+   a = "190356"
+   # 10012359
+   
+   
+   # starting number can never be zero
+   # find the least number from the remaining
+   
+   result = [0 for i in range(10)]
+   
+   # dict_res = dict([(i, 0) for i in range(10)])
+   # mini = -1
+   
+   # print(dict_res)
+   # temp = ""
+   for i in a:
+       result[int(i)] += 1
+   
+   temp = '0'*result[0]
+   res = ""
+   # print(result)
+   for outer in range(1, len(result)):
+       for i in range(result[outer]):
+           res += str(outer)
+   
+   out = res[1] + temp + res[1:]
+   print(out)
+   
+   # Longest substring without repeation
+   # abcdaaabcded
+   
+   a = "GEEKSFORGEEKS"
+   longestSubstr = ""
+   current = ""
+   
+   for i in range(len(a)):
+       if(a[i] not in current):
+           current+=a[i]
+       else:
+           if(len(current)>len(longestSubstr)):
+               longestSubstr = current
+   
+   if(len(current)>len(longestSubstr)):
+       longestSubstr = current
+   
+   print(longestSubstr)
+   
+   # Longest substring without repeation
+   # abcdaaabcded
+   
+   a = "pwwkew"
+   
+   longestSubstr = ""
+   temp = ""
+   for i in range(len(a)):
+       if(a[i] not in temp):
+           temp+=a[i]
+       else:
+           if(len(temp)>len(longestSubstr)):
+               longestSubstr=temp
+               if(temp[0]==a[i]):
+                   temp = temp.replace(a[i], "")
+                   temp+=a[i]
+               else:
+                   temp = ""
+   if(len(temp)>len(longestSubstr)):
+       longestSubstr=temp
+       
+   print(longestSubstr)
    
    
    print("TIME ----",start - end)
